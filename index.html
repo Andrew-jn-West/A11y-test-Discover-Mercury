@@ -4,6 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Discover Mercury – Version Select</title>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 <style>
 
 :focus {
@@ -12,10 +13,67 @@ outline-offset: 0.2rem;
 box-shadow: 0 0 0 0.2rem #000000;
 }
 
+.spacer {
+margin: 2rem;
+}
+
+/* ============================================= */
+
+html, body {
+margin: 0;
+padding: 0;
+width: 100%;
+}
+
+body {
+background: fixed linear-gradient(135deg, #3a0077 0%, #7b2cbf 50%, #e0aaff 100%);
+color: #ffffff;
+font-family: sans-serif;
+text-align: center;
+}
+
+/* ============================================= */
+
+.launch-title-div {
+display: flex;
+justify-content: center;
+gap: 0.5rem;
+font-family: 'Audiowide' sans-serif;
+font-style: bold;
+}
+
+.title-1 {
+color: #ffffff; /* base text color */
+text-shadow:
+0 0 5px #ffffff,   /* small white glow */
+0 0 10px #ffffff,  /* medium white glow */
+0 0 20px #ffffff,  /* bigger colored glow */
+0 0 30px #ffffff,  /* more spread out glow */
+0 0 40px #ffffff;  /* super spread glow */
+}
+
+.title-2 {
+color: #e0aaff; /* base text color */
+text-shadow:
+0 0 5px #e0aaff,   /* small white glow */
+0 0 10px #e0aaff,  /* medium white glow */
+0 0 20px #e0aaff,  /* bigger colored glow */
+0 0 30px #e0aaff,  /* more spread out glow */
+0 0 40px #e0aaff;  /* super spread glow */
+}
+
+/* ============================================= */
+
+header {
+background: #000000;
+padding: 1rem;
+margin-bottom: 2rem;
+font-size: 4rem;
+}
+
 .h1-div {
 width: 50%;
 margin: 0 auto;
-padding: 0.5rem;
 }
 
 h1 {
@@ -23,15 +81,36 @@ background: #000000;
 color: #ffffff;
 border: 1px solid #ffffff;
 border-radius: 1rem;
+padding: 0.5rem;
 }
 
+/* ============================================= */
 
-body {
-background: fixed linear-gradient(135deg, #3a0077 0%, #7b2cbf 50%, #e0aaff 100%);
-color: #ffffff;
-font-family: sans-serif;
-text-align: center;
-padding: 2rem;
+.a-frame {
+background: #111827;
+margin: 2rem;
+border-radius: 1rem;
+border: 0.2rem solid #ffffff;
+}
+
+.a-style {
+display: flex;
+flex-direction: column;
+}
+
+.a-img {
+display: flex;
+flex-direction: column;     /* stack image above link */
+align-items: center;  
+}
+
+.a-img img {
+width: 60%;               /* fixed size (you can adjust) */
+height: auto;
+border: 0.2rem solid #ffffff;
+border-radius: 1rem;
+margin-bottom: 1rem;
+margin-top: 1rem;
 }
 
 a {
@@ -65,24 +144,53 @@ color: #ffffff;
 </style>
 </head>
 
-<header>
+<!-- ======================================================= -->
+
+
+<body>
+
+<header class="header-div-1">
+<div class="launch-title-div">
+
+<p class="title-1">Discover</p>
+<p class="title-2">Mercury</p>
+
+</div>
+</header>
+
+<!-- ======================================================= -->
+
+<main>
 <div>
-<div >
+<div>
 <h1 class="h1-div">
 <p>Select a Version of the Discover Mercury Page You'd Like to View</p>
 </h1>
 </div>
 </div>
-</header>
 
-<body>
-<div>
-<div class="">
+<div class="a-frame">
 
+<div class="a-style">
+
+<div class="a-img">
+<img src="./images/accessible.png">
 <a href="accessible/index.html">Accessible Version </a>
+</div>
+</div>
+
+<hr class="spacer">
+
+
+<div class="a-img">
+<img src="./images/inaccessible.png">
 <a href="inaccessible/index.html">Inaccessible Version</a>
 </div>
+
 </div>
+</main>
+
+<!-- ======================================================= -->
 
 </body>
 </html>
