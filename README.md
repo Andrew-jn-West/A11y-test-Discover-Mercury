@@ -11,9 +11,6 @@ Welcome to the **Discover Mercury** fake travel site! This project is designed a
 - New accessibility testers honing their skills
 - Teams conducting hands-on workshops
 - Auditors practicing manual testing
-- Anyone preparing for CPACC, WAS, or other certifications
-
-**Live site:** (Currently does not work until main branch is updated.) [https://discovermercury.site](https://discovermercury.site)
 
 ## 🧪 What You Can Practice
 
@@ -36,4 +33,5 @@ Use this project to test with:
 - HTML, CSS (Tailwind), JavaScript
 - Static site
 - Repo includes all code needed to run and edit locally
+
 
