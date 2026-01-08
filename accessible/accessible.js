@@ -1,6 +1,9 @@
 // 🟦 = ENTIRE SECTION DIVIDER
 
 
+document.addEventListener("DOMContentLoaded", () => {  
+
+
 //ARIA-EXPANDED AND ARIA-HIDDEN TOGGLE
             function toggleCandyContent(expandableClass) {
             const candyElements = document.querySelectorAll(`.${expandableClass}`);
@@ -450,5 +453,5 @@
                 selectchevron.classList.toggle('flipped');
             });
         });
-
+});
 //TEST AREA ==================================================
