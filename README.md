@@ -1,3 +1,6 @@
+Live Site:
+https://andrew-jn-west.github.io/A11y-test-Discover-Mercury/
+
 # Discover Mercury – A11y Practice Site
 
 Welcome to the **Discover Mercury** fake travel site! This project is designed as a realistic, imperfect website to help you practice and refine your accessibility (a11y) testing skills.
@@ -33,5 +36,6 @@ Use this project to test with:
 - HTML, CSS (Tailwind), JavaScript
 - Static site
 - Repo includes all code needed to run and edit locally
+
 
 
